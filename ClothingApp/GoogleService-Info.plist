@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>802057250077-9phjssrc0n0qijndcru0uo8jr1oajupi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.802057250077-9phjssrc0n0qijndcru0uo8jr1oajupi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBB7kltTlXSMYl0_Cry8hwvzwjg1SUKTcQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>802057250077</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ClothingApp.sale</string>
+	<key>PROJECT_ID</key>
+	<string>ioscapstone</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ioscapstone.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:802057250077:ios:1489be2223dacb3621edf4</string>
+	<key>DATABASE_URL</key>
+	<string>https://ioscapstone.firebaseio.com</string>
+</dict>
+</plist>

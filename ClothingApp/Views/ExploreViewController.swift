@@ -24,11 +24,17 @@ class ExploreViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         getStoreItems()
+        
+        try? addReachabilityObserver()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setupCollectionViewItemSize()
+    }
+    
+    deinit {
+        removeReachabilityObserver()
     }
     
     private func setupCollectionViewItemSize() {
@@ -72,7 +78,7 @@ class ExploreViewController: UIViewController {
             
             if let _ = error {
                 // Show the error a proper error message
-                self.showError()
+                self.showError(errorMessage: "There was an error getting this store's items")
                 
             } else {
                 if let items = items {
@@ -84,8 +90,8 @@ class ExploreViewController: UIViewController {
         }
     }
     
-    private func showError() {
-        let alert = UIAlertController(title: "Alert", message: "There was an error getting this store's items", preferredStyle: .alert)
+    private func showError(errorMessage: String) {
+        let alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             self.dismiss(animated: true, completion: nil)
         }))
@@ -121,5 +127,12 @@ extension ExploreViewController: UICollectionViewDataSource {
         cell.itemPrice.text = item.price
         
         return cell
+    }
+}
+
+extension ExploreViewController: ReachabilityObserverDelegate {
+    
+    func reachabilityChanged(_ isReachable: Bool) {
+        showError(errorMessage: "There's no network connection")
     }
 }

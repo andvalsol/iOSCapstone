@@ -133,6 +133,8 @@ extension ExploreViewController: UICollectionViewDataSource {
 extension ExploreViewController: ReachabilityObserverDelegate {
     
     func reachabilityChanged(_ isReachable: Bool) {
-        showError(errorMessage: "There's no network connection")
+        if !isReachable {
+            showError(errorMessage: "There's no network connection")
+        }
     }
 }

@@ -8,5 +8,7 @@ target 'ClothingApp' do
   # Pods for ClothingApp
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'ReachabilitySwift'
+
 
 end

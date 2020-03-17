@@ -16,6 +16,7 @@
 		223F79CC241EE57700A8057F /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F79CB241EE57700A8057F /* CustomError.swift */; };
 		223F79D2241F045A00A8057F /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F79D0241F045A00A8057F /* ItemCollectionViewCell.swift */; };
 		223F79D3241F045A00A8057F /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223F79D1241F045A00A8057F /* ItemCollectionViewCell.xib */; };
+		22642F252421106F00D426BD /* ReachabilityObserverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22642F242421106F00D426BD /* ReachabilityObserverDelegate.swift */; };
 		22834F44241DA43300AB715A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22834F43241DA43300AB715A /* AppDelegate.swift */; };
 		22834F46241DA43300AB715A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22834F45241DA43300AB715A /* SceneDelegate.swift */; };
 		22834F48241DA43300AB715A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22834F47241DA43300AB715A /* ExploreViewController.swift */; };
@@ -35,10 +36,11 @@
 		2222E6BF241FC1A400B8AB57 /* ItemDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailCollectionViewCell.xib; sourceTree = "<group>"; };
 		2222E6C2241FC7C100B8AB57 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		2222E6C424200C6100B8AB57 /* ItemDetailLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailLocalDataSource.swift; sourceTree = "<group>"; };
-		223F79C9241ECAAD00A8057F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		223F79C9241ECAAD00A8057F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		223F79CB241EE57700A8057F /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		223F79D0241F045A00A8057F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		223F79D1241F045A00A8057F /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		22642F242421106F00D426BD /* ReachabilityObserverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserverDelegate.swift; sourceTree = "<group>"; };
 		227B6308DE9CEC09BBB8DD09 /* Pods-ClothingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothingApp.debug.xcconfig"; path = "Target Support Files/Pods-ClothingApp/Pods-ClothingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		22834F40241DA43300AB715A /* ClothingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22834F43241DA43300AB715A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				2222E6BC241FBB2A00B8AB57 /* Extensions.swift */,
+				22642F242421106F00D426BD /* ReachabilityObserverDelegate.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				22834F46241DA43300AB715A /* SceneDelegate.swift in Sources */,
 				2222E6BD241FBB2A00B8AB57 /* Extensions.swift in Sources */,
 				2222E6C524200C6100B8AB57 /* ItemDetailLocalDataSource.swift in Sources */,
+				22642F252421106F00D426BD /* ReachabilityObserverDelegate.swift in Sources */,
 				22834F60241DBED500AB715A /* FirebaseClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
